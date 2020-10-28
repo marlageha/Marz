@@ -717,20 +717,25 @@ function addAllToSorted(head, values) {
 function removeAddAndFindMedian(head, remove, add, median) {
     var c = 0;
     var previous = head;
+    // console.log("LOOK: " + head[1])
     var current = head[0];
     var r = false, m = false, a = false, result = null;
     while (true) {
+
         if (!r && current[1] == remove) {
             previous[0] = current[0];
             current = current[0];
             r = true;
         }
+
         if (!a && current == null) {
             current = [null, add];
             previous[0] = current;
             a = true;
 
         }
+        
+        
         if (!a && (current[1] > add)) {
             var temp = [previous[0], add];
             previous[0] = temp;
@@ -773,6 +778,7 @@ function medianFilter(data, window) {
     for (i = 0; i < dataLength; i++) {
         remove = i < (n + 1) ? data[0] : data[(i - n - 1)|0];
         add = i + n >= dataLength ? data[dataLength - 1] : data[(i + n)|0];
+        // console.log("HEAD: " + head[0])
         result.push(removeAddAndFindMedian(head, remove, add, n));
     }
     return result;

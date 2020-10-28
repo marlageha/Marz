@@ -621,6 +621,7 @@ FitsFileLoader.prototype.getWavelengths = function() {
 
     return q.promise;
 };
+// NOTE: Ask Marla about AAT formats.
 FitsFileLoader.prototype.getRawWavelengths = function() {
     this.log.debug("Getting spectra wavelengths");
     var q = this.$q.defer();
@@ -640,6 +641,13 @@ FitsFileLoader.prototype.getRawWavelengths = function() {
         var lambdas = [];
         var lambda = [];
         for (var i = 0; i < this.numPoints; i++) {
+            // I dont understand this, ask for help.
+            /**
+             * CRVAL1  =          6295.027832 / Co-ordinate value of axis 1
+                CRPIX1  =               2470.0 / Reference pixel along axis 1
+                CDELT1  =       1.037736218541 / Co-ordinate increment along axis 1
+
+             */
             lambda.push(((i + 1 - CRPIX1) * CDELT1) + CRVAL1);
         }
         lambdas.push(lambda);
