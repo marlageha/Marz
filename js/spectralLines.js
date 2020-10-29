@@ -99,9 +99,9 @@ SpectralLines.prototype.initialiseDefault = function() {
     this.addSpectralLine('N2d', '[NII]','Nitrogen 2 Doublet',6585.23,   0, 1, 1, 'shift+w');
     this.addSpectralLine('S2', '[SII]',  'Sulfur 2',         6718.32,   0, 1, 1, 'shift+z');
     this.addSpectralLine('S2d','[SII]', 'Sulfur 2 Doublet',  6732.71,   0, 1, 1, 'shift+x');
-    this.addSpectralLine('Ca2', '[CaII]', 'Calcium 2', 8498, 0, 1, 1, 'shift+ctrl+u');
-    this.addSpectralLine('Ca2a', '[CaII]', 'Calcium 2 Triplet A', 8542, 0, 1, 1, 'shift+ctrl+a');
-    this.addSpectralLine('Ca2b', '[CaII]', 'Calcium 2 Triplet B', 8662, 0, 1, 1, 'shift+ctrl+b');
+    this.addSpectralLine('Ca2', '[CaII]', 'Calcium 2',       8498.02, 1, 1, 1, 'shift+ctrl+u');
+    this.addSpectralLine('Ca2a', '[CaII]', 'Calcium 2 Triplet A', 8542.09, 1, 1, 1, 'shift+ctrl+a');
+    this.addSpectralLine('Ca2b', '[CaII]', 'Calcium 2 Triplet B', 8662.14, 1, 1, 1, 'shift+ctrl+b');
 };
 SpectralLines.prototype.getAll = function() {
     return this.lines;
