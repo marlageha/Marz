@@ -16,7 +16,7 @@ defaults.numCPUs = 0;              // A 0 value defaults to using all but one lo
 
 
 /** Properties that should not be changed. Modify at your own risk. */
-defaults.assignAutoQOPs = true;       // Whether or not assign autoQops
+defaults.assignAutoQOPs = false;       // Whether or not assign autoQops
 defaults.processTogether = true;      // To process and match together. Should be enable for automatic matching
 
 

@@ -906,7 +906,13 @@ angular.module('controllersZ', ['ui.router', 'ui.bootstrap', 'servicesZ'])
             mergeService.updateMergeDefaults();
         };
         $scope.getButtonLabel = function(qop) {
-            var labels = {4: ['Great (4)', '4'], 3: ['Good (3)', '3'], 2: ['Possible (2)', '2'], 1: ['Unknown (1)', '1'], 6: ['It\'s a star! (6)', '6'], 0: ['Unassigned (0)', '0']};
+            var labels = {
+                4: ['Good Galaxy (4)', '4'], 
+                3: ['Good Star (3)', '3'],
+                2: ['Bad Galaxy (2)', '2'],
+                1: ['Bad Star (1)', '1'],
+                6: ['WTF (6)', '6'],
+                0: ['Unassigned (0)', '0']};
             return labels[qop][$scope.ui.sidebarSmall ? 1 : 0]
         };
         $scope.getContractButtonLabel = function() {
