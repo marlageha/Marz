@@ -23,7 +23,7 @@ globalConfig.max_error = 1e10;
 
 // CONFIG FOR COSMIC RAY DETECTION
 globalConfig.cosmicIterations = 2;   // How many iterations to do
-globalConfig.deviationFactor = 30;   // How many std devs from the mean before clipping
+globalConfig.deviationFactor = 50;   // How many std devs from the mean before clipping
 
 // CONFIG FOR POLY FIT REJECT
 globalConfig.polyFitInteractions = 15;
