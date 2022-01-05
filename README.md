@@ -5,6 +5,14 @@ This project aims to take spectra from the AAOmega spectrograph and redshift the
 
 Instructions for use can be found in the application itself, which you can access at http://samreay.github.io/Marz.
 
+dmost update:
+Set quality labels as:
+   6 = Broad-line QSO
+   4 = Good galaxy
+   3 = Likely galaxy
+   2 = Unknown
+   1 = Star
+   0 = Not set (default is -1)
 ***** 
 
 
