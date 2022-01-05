@@ -1,4 +1,4 @@
-# Marz Redshifting Program
+# Marz Redshifting Program -- dmost version
 
 
 This project aims to take spectra from the AAOmega spectrograph and redshift them via an online application, for application in cosmology. It has since been generalised to take spectra from any spectrograph, given it follows a well defined input format.
