@@ -11,7 +11,7 @@ Set quality labels as:
    - 6 = Broad-line QSO
    - 4 = Good galaxy
    - 3 = Likely galaxy
-   - 2 = Unknown
+   - 2 = Unknown (run as a star)
    - 1 = Star
    - 0 = Not set (default is -1)
 ***** 
