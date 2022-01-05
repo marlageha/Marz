@@ -8,12 +8,12 @@ Instructions for use can be found in the application itself, which you can acces
 dmost update:
 Set quality labels as:
 
-   6. = Broad-line QSO
-   4. = Good galaxy
-   3. = Likely galaxy
-   2. = Unknown
-   1. = Star
-   0. = Not set (default is -1)
+   >6 = Broad-line QSO
+   >4 = Good galaxy
+   >3 = Likely galaxy
+   >2 = Unknown
+   >1 = Star
+   >0 = Not set (default is -1)
 ***** 
 
 
