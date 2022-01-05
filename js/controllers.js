@@ -908,10 +908,10 @@ angular.module('controllersZ', ['ui.router', 'ui.bootstrap', 'servicesZ'])
         $scope.getButtonLabel = function(qop) {
             var labels = {
                 4: ['Good Galaxy (4)', '4'], 
-                3: ['Good Star (3)', '3'],
-                2: ['Bad Galaxy (2)', '2'],
-                1: ['Bad Star (1)', '1'],
-                6: ['WTF (6)', '6'],
+                3: ['Maybe Galaxy (3)', '3'],
+                2: ['Unknown  (2)', '2'],
+                1: ['Good Star (1)', '1'],
+                6: ['Broad-line Quasar (6)', '6'],
                 0: ['Unassigned (0)', '0']};
             return labels[qop][$scope.ui.sidebarSmall ? 1 : 0]
         };
